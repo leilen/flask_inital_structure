@@ -1,5 +1,5 @@
 from flask import Flask , send_from_directory, render_template
-from route.sub import sub
+from .sub import sub
 from config import config
 
 def create_app(mode):

@@ -1,15 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+{% block css %}
+{{ super() }}
+{% endblock %}
 
 
-<!doctype html>
+{% block body %}
+{{ super()}}
+{% endblock %}
 
-<script src="/static/js/test.js"></script>
-<link rel="stylesheet" type="text/css" href="/css/test.css"/>
-<title>Hello from Flask</title>
-{% if name %}
-  <h1>Hello {{ name }}!</h1>
-{% else %}
-  <h1>Hello World!</h1>
-{% endif %}
-{% for i in range(0,count) %}
-<div>test{{i}}</div>
-{% endfor %}
+{% block content %}
+  <h1>Sub</h1>
+  <p class="important">
+    This is sub page
+  </p>
+{% endblock %}
+
+
+{% block footer %}
+asdasdasd<br>
+{{ super() }}
+{% endblock %}
+
+{% block js %}
+{{ super() }}
+{% endblock %}

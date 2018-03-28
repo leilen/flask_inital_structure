@@ -1,7 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+{% block css %}
+{{ super() }}
+{% endblock %}
 
 
-<!doctype html>
+{% block body %}
+{{ super()}}
+{% endblock %}
 
-<script src="/static/js/test2.js"></script>
-<link rel="stylesheet" type="text/css" href="/static/css/test2.css"/>
-<title>Hello from Flask</title>
+{% block content %}
+    <h1>Index</h1>
+    <p class="important">
+    This is Index Page
+    </p>
+{% endblock %}
+
+
+{% block footer %}
+asdasdasd<br>
+{{ super() }}
+{% endblock %}
+
+{% block js %}
+{{ super() }}
+{% endblock %}
